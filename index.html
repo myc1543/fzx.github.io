@@ -93,10 +93,12 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="1-安装WSL命令"><a href="#1-安装WSL命令" class="headerlink" title="1. 安装WSL命令"></a>1. 安装WSL命令</h2><h3 id="1-1-管理员身份打开PowerShell"><a href="#1-1-管理员身份打开PowerShell" class="headerlink" title="1.1 管理员身份打开PowerShell"></a>1.1 管理员身份打开PowerShell</h3><p>输入</p>
+        <p>本篇文章参考微软的文档</p>
+<p><a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/windows/wsl/install">https://learn.microsoft.com/zh-cn/windows/wsl/install</a></p>
+<h2 id="1-安装WSL命令"><a href="#1-安装WSL命令" class="headerlink" title="1. 安装WSL命令"></a>1. 安装WSL命令</h2><h3 id="1-1-管理员身份打开PowerShell"><a href="#1-1-管理员身份打开PowerShell" class="headerlink" title="1.1 管理员身份打开PowerShell"></a>1.1 管理员身份打开PowerShell</h3><p>输入</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl <span class="literal">--install</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121223823461.png" alt="image-20251121223823461"></p>
+<p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121223823461.png"></p>
 <p>该命令会自动启用WSL相关的组件。接着重启电脑。</p>
 <p>或者使用windows功能(启用或关闭Windows功能)，启用<strong>适用于Linux的Windows子系统</strong></p>
 <p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121222954406.png" alt="image-20251121222954406"></p>
@@ -105,8 +107,8 @@
 
 
 <h2 id="3-安装Linux发行版-注意安装位置"><a href="#3-安装Linux发行版-注意安装位置" class="headerlink" title="3.安装Linux发行版(注意安装位置)"></a>3.安装Linux发行版(注意安装位置)</h2><p>建议从<strong>Microsoft Store</strong>安装稳定的Linux发行版，这里以Ubuntu 18.04为例</p>
-<h3 id="3-1-安装发行版"><a href="#3-1-安装发行版" class="headerlink" title="3.1 安装发行版"></a>3.1 安装发行版</h3><p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121223552582.png" alt="image-20251121223552582"></p>
-<h3 id="3-2-初始化信息"><a href="#3-2-初始化信息" class="headerlink" title="3.2 初始化信息"></a>3.2 初始化信息</h3><p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121223934668.png" alt="image-20251121223934668"></p>
+<h3 id="3-1-安装发行版"><a href="#3-1-安装发行版" class="headerlink" title="3.1 安装发行版"></a>3.1 安装发行版</h3><p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121223552582.png"></p>
+<h3 id="3-2-初始化信息"><a href="#3-2-初始化信息" class="headerlink" title="3.2 初始化信息"></a>3.2 初始化信息</h3><p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121223934668.png"></p>
 <p>输入自己的用户名以及密码</p>
 <h2 id="4-检查安装"><a href="#4-检查安装" class="headerlink" title="4. 检查安装"></a>4. 检查安装</h2><h3 id="4-1-查看已安装的发行版及其版本"><a href="#4-1-查看已安装的发行版及其版本" class="headerlink" title="4.1 查看已安装的发行版及其版本"></a>4.1 查看已安装的发行版及其版本</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -l -v</span><br></pre></td></tr></table></figure>
 
@@ -119,7 +121,7 @@
 <h3 id="5-1-停止WSL的运行"><a href="#5-1-停止WSL的运行" class="headerlink" title="5.1 停止WSL的运行"></a>5.1 停止WSL的运行</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl -l -v</span><br></pre></td></tr></table></figure>
 
 <p>首先查看WSL的运行状态</p>
-<p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121225104829.png" alt="image-20251121225104829"></p>
+<p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121225104829.png"></p>
 <p>如果WSL正在运行，首先终止其运行</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wsl --shutdown</span><br></pre></td></tr></table></figure>
 
@@ -129,7 +131,7 @@
 
 
 
-<p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121230524992.png" alt="image-20251121230524992"></p>
+<p><img src="/2025/11/21/WSL%E7%9A%84%E5%AE%89%E8%A3%85/image-20251121230524992.png"></p>
 
       
     </div>
