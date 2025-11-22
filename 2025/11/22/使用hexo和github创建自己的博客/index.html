@@ -6,19 +6,19 @@
   
   <title>使用hexo和github创建自己的博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本篇文章参考Hexo官方文档、Hexo博客如何插入图片、 Github Pagess，一步一步搭建自己的博客。 1.前置准备安装Hexo需要先安装Node.js和Git 1.1 安装Node.jsnode官网，推荐下载12.0及以上的LTS版本(默认包含npm工具包)，一路安装即可。 输入node -v npm -v验证是否安装成功  1.2 安装git(已经配置的可跳过)git官网，一路安装即可">
+  <meta name="description" content="本篇文章参考Hexo官方文档、Hexo博客如何插入图片、 Github Pagess，一步一步搭建自己的博客。 1.前置准备安装Hexo需要先安装Node.js和Git 1.1 安装Node.jsnode官网，推荐下载12.0及以上的LTS版本(默认包含npm工具包)，一路安装即可。 输入node -v npm -v验证是否安装成功  1.2 安装git(已经配置的可跳过，后续命令都在git中完成">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用hexo和github创建自己的博客">
 <meta property="og:url" content="http://example.com/2025/11/22/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="本篇文章参考Hexo官方文档、Hexo博客如何插入图片、 Github Pagess，一步一步搭建自己的博客。 1.前置准备安装Hexo需要先安装Node.js和Git 1.1 安装Node.jsnode官网，推荐下载12.0及以上的LTS版本(默认包含npm工具包)，一路安装即可。 输入node -v npm -v验证是否安装成功  1.2 安装git(已经配置的可跳过)git官网，一路安装即可">
+<meta property="og:description" content="本篇文章参考Hexo官方文档、Hexo博客如何插入图片、 Github Pagess，一步一步搭建自己的博客。 1.前置准备安装Hexo需要先安装Node.js和Git 1.1 安装Node.jsnode官网，推荐下载12.0及以上的LTS版本(默认包含npm工具包)，一路安装即可。 输入node -v npm -v验证是否安装成功  1.2 安装git(已经配置的可跳过，后续命令都在git中完成">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.assets/image-20251122143108724.png">
 <meta property="og:image" content="http://example.com/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.assets/image-20251122141133630.png">
 <meta property="og:image" content="http://example.com/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.assets/image-20251122145400207.png">
 <meta property="og:image" content="http://example.com/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.assets/image-20251122145713620.png">
 <meta property="article:published_time" content="2025-11-22T03:42:53.000Z">
-<meta property="article:modified_time" content="2025-11-22T07:02:40.430Z">
+<meta property="article:modified_time" content="2025-11-22T07:03:49.210Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.assets/image-20251122143108724.png">
@@ -105,7 +105,7 @@
 <h3 id="1-1-安装Node-js"><a href="#1-1-安装Node-js" class="headerlink" title="1.1 安装Node.js"></a>1.1 安装Node.js</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn"><strong>node官网</strong></a>，推荐下载12.0及以上的LTS版本(默认包含npm工具包)，一路安装即可。</p>
 <p>输入<code>node -v</code> <code>npm -v</code>验证是否安装成功</p>
 <p><img src="/../%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2.assets/image-20251122143108724.png" alt="image-20251122143108724"></p>
-<h3 id="1-2-安装git-已经配置的可跳过"><a href="#1-2-安装git-已经配置的可跳过" class="headerlink" title="1.2 安装git(已经配置的可跳过)"></a>1.2 安装git(已经配置的可跳过)</h3><p><a target="_blank" rel="noopener" href="https://git-scm.com/"><strong>git官网</strong></a>，一路安装即可。</p>
+<h3 id="1-2-安装git-已经配置的可跳过，后续命令都在git中完成"><a href="#1-2-安装git-已经配置的可跳过，后续命令都在git中完成" class="headerlink" title="1.2 安装git(已经配置的可跳过，后续命令都在git中完成)"></a>1.2 安装git(已经配置的可跳过，后续命令都在git中完成)</h3><p><a target="_blank" rel="noopener" href="https://git-scm.com/"><strong>git官网</strong></a>，一路安装即可。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version  # 检查是否已经安装git</span><br></pre></td></tr></table></figure>
 
 
