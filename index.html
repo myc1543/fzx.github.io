@@ -93,11 +93,11 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>本篇文章参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/"><strong>Hexo官方文档</strong></a>、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265077468"><strong>Hexo博客如何插入图片</strong></a>、 <a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/quickstart"><strong>Github Pages</strong></a>s，一步一步搭建自己的博客。</p>
+        <p>本篇文章参考<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/"><strong>Hexo官方文档</strong></a>、<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265077468"><strong>Hexo博客如何插入图片</strong></a>、 <a target="_blank" rel="noopener" href="https://docs.github.com/en/pages/quickstart"><strong>Github Pages</strong></a>，一步一步搭建自己的博客。</p>
 <h2 id="1-前置准备"><a href="#1-前置准备" class="headerlink" title="1.前置准备"></a>1.前置准备</h2><p>安装Hexo需要先安装Node.js和Git</p>
 <h3 id="1-1-安装Node-js"><a href="#1-1-安装Node-js" class="headerlink" title="1.1 安装Node.js"></a>1.1 安装Node.js</h3><p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn"><strong>node官网</strong></a>，推荐下载12.0及以上的LTS版本(默认包含npm工具包)，一路安装即可。</p>
 <p>输入<code>node -v</code> <code>npm -v</code>验证是否安装成功</p>
-<p><img src="/image-20251122143108724.png"></p>
+<p><img src="/2025/11/22/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/image-20251122143108724.png"></p>
 <h3 id="1-2-安装git-已经配置的可跳过，后续命令都在git中完成"><a href="#1-2-安装git-已经配置的可跳过，后续命令都在git中完成" class="headerlink" title="1.2 安装git(已经配置的可跳过，后续命令都在git中完成)"></a>1.2 安装git(已经配置的可跳过，后续命令都在git中完成)</h3><p><a target="_blank" rel="noopener" href="https://git-scm.com/"><strong>git官网</strong></a>，一路安装即可。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version  # 检查是否已经安装git</span><br></pre></td></tr></table></figure>
 
@@ -146,18 +146,18 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
 <p>在浏览器打开<code>http://localhost:4000</code>，就可以看到部署的网页</p>
-<p><img src="/image-20251122151002542.png"></p>
+<p><img src="/2025/11/22/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/image-20251122151002542.png"></p>
 <h2 id="3-部署到Github-Pages"><a href="#3-部署到Github-Pages" class="headerlink" title="3. 部署到Github Pages"></a>3. 部署到Github Pages</h2><p>如果博客需要其他人也访问，则需要部署到服务器上，在这里选择使用Github Pages，是免费的。访问的地址是<code>https://用户名.github.io</code></p>
 <h3 id="3-1-新建一个仓库"><a href="#3-1-新建一个仓库" class="headerlink" title="3.1 新建一个仓库"></a>3.1 新建一个仓库</h3><p><strong>注意点</strong></p>
 <ul>
 <li><p>仓库一定是<code>public</code>的，否则别人访问不到</p>
 </li>
 <li><p>仓库名一定是<code>用户名.github.io</code></p>
-<p><img src="/image-20251122145400207.png"></p>
+<p><img src="/2025/11/22/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/image-20251122145400207.png"></p>
 </li>
 </ul>
 <h3 id="3-2-更改hexo配置"><a href="#3-2-更改hexo配置" class="headerlink" title="3.2 更改hexo配置"></a>3.2 更改hexo配置</h3><p>打开目录下_config.Yaml文件</p>
-<p><img src="/image-20251122145713620.png"></p>
+<p><img src="/2025/11/22/%E4%BD%BF%E7%94%A8hexo%E5%92%8Cgithub%E5%88%9B%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/image-20251122145713620.png"></p>
 <p>找到Deployment选项</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: git@github.com:myc1543/myc1543.github.io.git</span><br><span class="line">  branch: main</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
